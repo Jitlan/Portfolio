@@ -163,7 +163,7 @@ html, body {
         transform: translateX(-70px);
     }
     100%{
-        transform: translateX(3000px);
+        transform: translateX(4500px);
     }
 }
 
