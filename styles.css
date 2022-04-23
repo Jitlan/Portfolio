@@ -27,10 +27,6 @@ html, body {
     overflow-x: hidden;
 }
 /* id's */
-#home-container{
-
-}
-/* dup code is to prepare for changes, these won't be the same*/
 #contact-form-container{
     display: block;
     position: relative;
@@ -83,7 +79,7 @@ html, body {
     animation: full-slide 25s linear infinite;
 }
 .interest-container2{
-    animation-delay: 3s;
+    animation-delay: 5s;
     animation: full-slide 15s linear infinite;
 }
 .interest-container2 .interest-holder{
@@ -154,15 +150,6 @@ html, body {
     filter: blur(4px);
 }
 
-/* .interest-holder2{
-    position: absolute;
-    top: 50%;
-    height: 7px;
-    width: 70px;
-    background:linear-gradient(45deg, black 0%, hsla(268, 100%, 24%, 1) 60%, hsla(268, 100%, 58%, 1) 100%);
-    border-radius: 999px;
-    animation-delay: 3s;
-} */
 /*Contact Form*/
 .form-input{
     margin-left: 5px;
