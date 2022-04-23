@@ -1,0 +1,13 @@
+This document has ideas for my portfolio page
+- Have name as styled text
+- Animate the name
+- Have links/buttons that direct to github and linked in 
+- Make an animated background
+    - at desk working with coffee mug and headphones on?
+    - 3 tone gradient?
+- have a color theme switcher?
+- About page
+- contact page
+- interesting way to show off projects
+    - moving cards as you scroll?
+- 

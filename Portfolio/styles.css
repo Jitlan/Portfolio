@@ -1,0 +1,202 @@
+:root{
+    --primary-color: #212121;
+    --secondary-color: #6D9886;
+    --tertiary-color: #D9CAB3;
+    --quaternary-color: #F6F6F6;
+    --orangepurple-color: 45deg, hsla(0, 0%, 100%, 1) 0%, hsla(18, 100%, 78%, 1) 41%,
+         hsla(268, 100%, 24%, 1) 100%, hsla(268, 100%, 58%, 1) 100%;
+}
+
+body
+{
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: var(--quaternary-color);
+    font-size: 12pt;
+    background-color: black;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+/* classes */
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+.abs-center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    margin: 1px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 5px;  
+}
+.col-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1px;  
+}
+.name {
+    margin: 0px;
+    font-size: 80px;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent;
+    /* from coloors.co */
+    background-image: linear-gradient(var(--orangepurple-color));
+    background-size: 500%;
+    animation: color-change 5s infinite alternate-reverse;
+}
+.name-sm {
+    margin: 0px;
+    font-size: 20px;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent;
+    /* from coloors.co */
+    background-image: linear-gradient(var(--orangepurple-color));
+    background-size: 500%;
+    animation: color-change 5s infinite alternate-reverse;
+}
+.link {
+    font-size: 31px;
+    text-decoration: none;
+    color: var(--quaternary-color);
+}
+.link:hover{
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(var(--orangepurple-color));
+    background-size: 500%;
+    animation: color-change 1s infinite alternate-reverse;
+}
+.link-sm {
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(var(--orangepurple-color));
+    background-size: 500%;
+    animation: color-change 2s infinite alternate-reverse;
+}
+.card {
+    box-shadow: 0 4px 8px 0 var(--primary-color);
+}
+.flex-img {
+    align-self: center;
+    transition: .3s;
+}
+.flex-img:hover {
+    transform: scale(.8);
+}
+.interest-holder{
+    position: absolute;
+    top: 50%;
+    height: 4px;
+    width: 70px;
+    background:linear-gradient(45deg, black 0%, hsla(268, 100%, 24%, 1) 60%, hsla(268, 100%, 58%, 1) 100%);
+    border-radius: 999px;
+    animation: full-slide 7s infinite;
+    filter: blur(2px);
+}
+.interest-holder2{
+    position: absolute;
+    top: 50%;
+    height: 7px;
+    width: 70px;
+    background:linear-gradient(45deg, black 0%, hsla(268, 100%, 24%, 1) 60%, hsla(268, 100%, 58%, 1) 100%);
+    border-radius: 999px;
+    animation-delay: 3s;
+    animation: full-slide 5s infinite;
+    filter: blur(2px);
+}
+/*Contact Form*/
+.form-input{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    height: 35px;
+    
+}
+.form-tag{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.form-tag::after {
+    content: "*";
+    color: red;
+}
+.form-card{
+    width: 400px;
+    height: 450px;
+    border-radius: 10px;
+}
+.submit-btn{
+    height:30px;
+    width:100px;
+    margin-left:5px;
+    margin-bottom: 5px;
+    left:10%;
+    border-radius: 5px;
+}
+
+/*animations*/
+@keyframes color-change {
+    0% { background-position: 0px 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+@keyframes full-slide {
+    0%{
+        transform: translateX(-70px);
+    }
+    100%{
+        transform: translateX(3000px);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #home-container .abs-center{
+        top:25%
+    }
+    .abs-center {
+        position: fixed;
+        top: 5%;
+        left: 0%;
+        /* bring your own prefixes */
+        transform: translate(0%, 0%);
+        margin: 15px;
+    }
+    .name {
+        margin: 0px;
+        font-size: 72px;
+        text-transform: uppercase;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color:transparent;
+        /* from coloors.co */
+        background-image: linear-gradient(var(--orangepurple-color));
+        background-size: 500%;
+        animation: color-change 5s infinite alternate-reverse;
+    }
+    .link{
+        color:transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: linear-gradient(var(--orangepurple-color));
+        background-size: 500%;
+        animation: color-change 15s infinite alternate-reverse;
+    }
+}

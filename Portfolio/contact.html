@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Contact Me!</title>
+</head>
+<body>
+    <div class="interest-holder" style="top: 10%"></div>
+    <div class="interest-holder2" style="top: 38%; left:-475px"></div>
+    <div class="interest-holder" style="top: 65%; left:-555px"></div>
+    <div class="interest-holder2" style="top: 15%; left:-1040px"></div>
+    <div class="interest-holder" style="top: 80%; left:-1200px"></div>
+    <div class="interest-holder2" style="top: 58%; left:-820px"></div>
+    <div class="col-container abs-center">
+        <div class="container">
+            <a href="./index.html" class="link"><b>Home</b></a>
+            <a style="font-size: 34px;">|</a>
+            <a href="./about.html" class="link"><b>About</b></a>
+        </div>
+        
+        <form method="post" id="sheetdb-form" action="https://sheetdb.io/api/v1/sjc9griwy93xe" >              
+            <div class="col-container form-card" style="margin-top:15px;">
+                <h2 style="margin: 10px 0 5px 5px;">Contact Me!</h2>
+                <div class="col-container">
+                    <label class="form-tag" for="Name">Name</label>
+                    <input class="form-input" name="data[Name]" required>
+                </div>
+                <div class="col-container">
+                    <label class="form-tag" for="Email">Email</label>
+                    <input class="form-input" name="data[Email]" required>
+                </div>
+                <div class="col-container">
+                    <label class="form-tag" for="Subject">Subject</label>
+                    <input class="form-input" name="data[Subject]" required>
+                </div>
+                <div class="col-container">
+                    <label class="form-tag" for="Message">Message</label>
+                    <!-- <input class="form-input" name="data[Message]" required> -->
+                    <textarea class="form-input" name="data[Message]" form="sheetdb-form" style="height:100px; resize: none;" required></textarea>
+                </div>
+                <button class="center submit-btn name-sm">Submit</button>
+            </div>         
+        </form>
+    </div>
+</body>
+
+</html>
+<script type="text/javascript">
+    var form = document.getElementById('sheetdb-form');
+    form.addEventListener("submit", e => {
+        e.preventDefault();
+        fetch(form.action, {
+            method: "POST",
+            body: new FormData(document.getElementById("sheetdb-form")),
+        }).then(
+            response => response.json())
+        .then((html) => {
+            alert("Thank you for your interest!")
+        })        
+    })
+</script>
+
+
