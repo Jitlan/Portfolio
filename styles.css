@@ -9,6 +9,11 @@
 
 body
 {
+    display: block;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    min-height: 700px;
     font-family: 'Helvetica', 'Arial', sans-serif;
     color: var(--quaternary-color);
     font-size: 12pt;
@@ -16,34 +21,74 @@ body
 }
 html, body {
     max-width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
     overflow-x: hidden;
 }
+/* id's */
+#home-container{
+
+}
+/* dup code is to prepare for changes, these won't be the same*/
+#contact-form-container{
+    display: block;
+    position: relative;
+    width: 90%;
+    min-height: 500px;
+}
+#about-text{
+    font-size: 18px; 
+}
+#about-container{
+    width:90%;
+    min-height: 700px;
+}
 /* classes */
+
 .center{
     margin-left: auto;
     margin-right: auto;
 }
 .abs-center {
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
-    /* bring your own prefixes */
     transform: translate(-50%, -50%);
     margin: 1px;
+    max-width: 90%;
+    /*debug-box*/
+    /* border: 1px solid white; */
 }
 .container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 5px;  
+    gap: 5px;
 }
 .col-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 1px;  
+    gap: 1px;
+}
+.interest-container{
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    animation: full-slide 25s linear infinite;
+}
+.interest-container2{
+    animation-delay: 3s;
+    animation: full-slide 15s linear infinite;
+}
+.interest-container2 .interest-holder{
+    height: 10px;
+    filter: blur(2px);
 }
 .name {
     margin: 0px;
@@ -71,7 +116,6 @@ html, body {
 }
 .link {
     font-size: 31px;
-    text-decoration: none;
     color: var(--quaternary-color);
 }
 .link:hover{
@@ -104,13 +148,13 @@ html, body {
     position: absolute;
     top: 50%;
     height: 4px;
-    width: 70px;
+    width: 5%;
     background:linear-gradient(45deg, black 0%, hsla(268, 100%, 24%, 1) 60%, hsla(268, 100%, 58%, 1) 100%);
     border-radius: 999px;
-    animation: full-slide 7s infinite;
-    filter: blur(2px);
+    filter: blur(4px);
 }
-.interest-holder2{
+
+/* .interest-holder2{
     position: absolute;
     top: 50%;
     height: 7px;
@@ -118,16 +162,14 @@ html, body {
     background:linear-gradient(45deg, black 0%, hsla(268, 100%, 24%, 1) 60%, hsla(268, 100%, 58%, 1) 100%);
     border-radius: 999px;
     animation-delay: 3s;
-    animation: full-slide 5s infinite;
-    filter: blur(2px);
-}
+} */
 /*Contact Form*/
 .form-input{
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: 5px;
     height: 35px;
-    
+    width: 95%;
 }
 .form-tag{
     margin-left: 5px;
@@ -138,12 +180,11 @@ html, body {
     content: "*";
     color: red;
 }
-.form-card{
-    width: 400px;
-    height: 450px;
-    border-radius: 10px;
+.form-textarea{
+    height:100px;
+    resize: none;
 }
-.submit-btn{
+.btn{
     height:30px;
     width:100px;
     margin-left:5px;
@@ -160,25 +201,13 @@ html, body {
 }
 @keyframes full-slide {
     0%{
-        transform: translateX(-70px);
+        transform: translateX(-100%);
     }
     100%{
-        transform: translateX(4500px);
+        transform: translateX(110%);
     }
 }
-
 @media only screen and (max-width: 600px) {
-    #home-container .abs-center{
-        top:25%
-    }
-    .abs-center {
-        position: fixed;
-        top: 5%;
-        left: 0%;
-        /* bring your own prefixes */
-        transform: translate(0%, 0%);
-        margin: 15px;
-    }
     .name {
         margin: 0px;
         font-size: 72px;
@@ -190,13 +219,5 @@ html, body {
         background-image: linear-gradient(var(--orangepurple-color));
         background-size: 500%;
         animation: color-change 5s infinite alternate-reverse;
-    }
-    .link{
-        color:transparent;
-        -webkit-background-clip: text;
-        background-clip: text;
-        background-image: linear-gradient(var(--orangepurple-color));
-        background-size: 500%;
-        animation: color-change 15s infinite alternate-reverse;
     }
 }

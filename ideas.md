@@ -10,4 +10,4 @@ This document has ideas for my portfolio page
 - contact page
 - interesting way to show off projects
     - moving cards as you scroll?
-- 
+- write interest-holders to be in css
