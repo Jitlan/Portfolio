@@ -11,3 +11,7 @@ This document has ideas for my portfolio page
 - interesting way to show off projects
     - moving cards as you scroll?
 - write interest-holders to be in css
+- make Jitlan stand out on about page; italics or quote
+- underline link in about page
+- it's on about page instead of its
+- not working the way i want it to on mobile

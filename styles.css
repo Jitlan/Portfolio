@@ -156,19 +156,19 @@ html, body {
 }
 .interest-holder:nth-child(1){
     top: 45%; 
-    left: 0%;
+    left: 52%;
 }
 .interest-holder:nth-child(2){
     top: 10%; 
-    left: 5%;
+    left: 29%;
 }
 .interest-holder:nth-child(3){
-    top: 10%; 
-    left: 5%;
+    top: 18%; 
+    left: 52%;
 }
 .interest-holder:nth-child(4){
     top: 38%;
-    left: 20%;
+    left: 43%;
 }
 .interest-holder:nth-child(5){
     top: 65%;
@@ -180,18 +180,53 @@ html, body {
 }
 .interest-holder:nth-child(7){
     top: 80%; 
-    left: 45%;
+    left: 65%;
 }
 .interest-holder:nth-child(8){
     top: 58%;
     left: 80%;
 }
 .interest-holder:nth-child(9){
-    top: 6%;
-    left: 100%;
+    top: 8%;
+    left: 90%;
 }
 
-
+.interest-holder .interest-holder2:nth-child(1){
+    top: 35%; 
+    left: 35%;
+}
+.interest-holder .interest-holder2:nth-child(2){
+    top: 10%; 
+    left: 34%;
+}
+.interest-holder .interest-holder2:nth-child(3){
+    top: 18%; 
+    left: 32%;
+}
+.interest-holder .interest-holder2:nth-child(4){
+    top: 48%;
+    left: 33%;
+}
+.interest-holder .interest-holder2:nth-child(5){
+    top: 65%;
+    left: 90%;
+}
+.interest-holder .interest-holder2:nth-child(6){
+    top: 23%;
+    left: 38%;
+}
+.interest-holder .interest-holder2:nth-child(7){
+    top: 73%; 
+    left: 45%;
+}
+.interest-holder .interest-holder2:nth-child(8){
+    top: 53%;
+    left: 80%;
+}
+.interest-holder .interest-holder2:nth-child(9){
+    top: 11%;
+    left: 95%;
+}
 
 /*Contact Form*/
 .form-input{
@@ -199,6 +234,7 @@ html, body {
     height: 35px;
     width: 95%;
     background: var(--quaternary-color);
+    border-radius: 5px;
 }
 .form-tag{
     margin-bottom: 5px;
