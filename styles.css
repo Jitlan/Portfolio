@@ -31,7 +31,7 @@ html, body {
     display: block;
     position: relative;
     width: 90%;
-    min-height: 500px;
+    min-height: 400px;
     max-width: 1000px;
 }
 #about-text{
@@ -39,6 +39,8 @@ html, body {
 }
 #about-container{
     width:90%;
+    max-width: 1000px;
+    min-width: 500px;
     min-height: 700px;
 }
 /* classes */
@@ -71,22 +73,7 @@ html, body {
     flex-wrap: wrap;
     gap: 1px;
 }
-.interest-container{
-    position:absolute;
-    top: 0%;
-    left: 0%;
-    height: 100%;
-    width: 100%;
-    animation: full-slide 25s linear infinite;
-}
-.interest-container2{
-    animation-delay: 5s;
-    animation: full-slide 15s linear infinite;
-}
-.interest-container2 .interest-holder{
-    height: 10px;
-    filter: blur(2px);
-}
+
 .name {
     margin: 0px;
     font-size: 80px;
@@ -141,6 +128,23 @@ html, body {
 .flex-img:hover {
     transform: scale(.8);
 }
+/*animated background styles*/
+.interest-container{
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    animation: full-slide 25s linear infinite;
+}
+.interest-container2{
+    animation-delay: 5s;
+    animation: full-slide 15s linear infinite;
+}
+.interest-container2 .interest-holder{
+    height: 10px;
+    filter: blur(2px);
+}
 .interest-holder{
     position: absolute;
     top: 50%;
@@ -150,12 +154,51 @@ html, body {
     border-radius: 999px;
     filter: blur(4px);
 }
+.interest-holder:nth-child(1){
+    top: 45%; 
+    left: 0%;
+}
+.interest-holder:nth-child(2){
+    top: 10%; 
+    left: 5%;
+}
+.interest-holder:nth-child(3){
+    top: 10%; 
+    left: 5%;
+}
+.interest-holder:nth-child(4){
+    top: 38%;
+    left: 20%;
+}
+.interest-holder:nth-child(5){
+    top: 65%;
+    left: 95%;
+}
+.interest-holder:nth-child(6){
+    top: 15%;
+    left: 38%;
+}
+.interest-holder:nth-child(7){
+    top: 80%; 
+    left: 45%;
+}
+.interest-holder:nth-child(8){
+    top: 58%;
+    left: 80%;
+}
+.interest-holder:nth-child(9){
+    top: 6%;
+    left: 100%;
+}
+
+
 
 /*Contact Form*/
 .form-input{
     margin-bottom: 5px;
     height: 35px;
     width: 95%;
+    background: var(--quaternary-color);
 }
 .form-tag{
     margin-bottom: 5px;
@@ -175,6 +218,20 @@ html, body {
     margin-bottom: 5px;
     left:10%;
     border-radius: 5px;
+    color: var(--quaternary-color);
+    background: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: 1px solid white;
+}
+.btn:hover{
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent;
+    /* from coloors.co */
+    background-image: linear-gradient(var(--orangepurple-color));
+    background-size: 500%;
+    animation: color-change 3s infinite alternate-reverse;
 }
 
 /*animations*/
