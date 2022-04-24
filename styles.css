@@ -153,15 +153,11 @@ html, body {
 
 /*Contact Form*/
 .form-input{
-    margin-left: 5px;
-    margin-right: 5px;
     margin-bottom: 5px;
     height: 35px;
     width: 95%;
 }
 .form-tag{
-    margin-left: 5px;
-    margin-right: 5px;
     margin-bottom: 5px;
 }
 .form-tag::after {
