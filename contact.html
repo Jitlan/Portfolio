@@ -44,7 +44,7 @@
                 </div>
                 <div class="col-container">
                     <label class="form-tag" for="Email">Email</label>
-                    <input class="form-input" name="data[Email]" required>
+                    <input type="email" class="form-input" name="data[Email]" id="e" required>
                 </div>
                 <div class="col-container">
                     <label class="form-tag" for="Subject">Subject</label>
@@ -74,7 +74,7 @@
         }).then(
             response => response.json())
         .then((html) => {
-            alert("Thank you for your interest!")
+            window.location.replace("https://jitlan.dev/thank-you.html");
         })        
     })
 </script>
