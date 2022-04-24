@@ -32,6 +32,7 @@ html, body {
     position: relative;
     width: 90%;
     min-height: 500px;
+    max-width: 1000px;
 }
 #about-text{
     font-size: 18px; 
