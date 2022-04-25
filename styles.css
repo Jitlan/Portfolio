@@ -233,7 +233,6 @@ html, body {
     margin-bottom: 5px;
     height: 35px;
     width: 95%;
-    background: var(--quaternary-color);
     border-radius: 5px;
 }
 .form-tag{
@@ -251,8 +250,6 @@ html, body {
     height:30px;
     width:100px;
     margin-left:0;
-    margin-bottom: 5px;
-    left:10%;
     border-radius: 5px;
     color: var(--quaternary-color);
     background: black;
