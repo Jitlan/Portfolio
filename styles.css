@@ -224,6 +224,7 @@ html, body {
 }
 .btn:hover{
     border: 3px solid white;
+    cursor: pointer;
     border-color: var(--orangepurple-color);
     animation: color-change 1s infinite alternate-reverse;
 }
