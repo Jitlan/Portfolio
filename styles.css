@@ -40,7 +40,7 @@ html, body {
 #about-container{
     width:90%;
     max-width: 1000px;
-    min-width: 500px;
+    min-width: 675px;
     min-height: 700px;
 }
 /* classes */
@@ -124,6 +124,7 @@ html, body {
 .flex-img {
     align-self: center;
     transition: .3s;
+    max-width: 74px; max-height: 74px;
 }
 .flex-img:hover {
     transform: scale(.8);
@@ -138,6 +139,7 @@ html, body {
     animation: full-slide 25s linear infinite;
 }
 .interest-container2{
+    margin-top: 25px ;
     animation-delay: 5s;
     animation: full-slide 15s linear infinite;
 }
@@ -164,7 +166,7 @@ html, body {
 }
 .interest-holder:nth-child(3){
     top: 18%; 
-    left: 52%;
+    left: 72%;
 }
 .interest-holder:nth-child(4){
     top: 38%;
@@ -180,7 +182,7 @@ html, body {
 }
 .interest-holder:nth-child(7){
     top: 80%; 
-    left: 65%;
+    left: 25%;
 }
 .interest-holder:nth-child(8){
     top: 58%;
@@ -189,43 +191,6 @@ html, body {
 .interest-holder:nth-child(9){
     top: 8%;
     left: 90%;
-}
-
-.interest-holder .interest-holder2:nth-child(1){
-    top: 35%; 
-    left: 35%;
-}
-.interest-holder .interest-holder2:nth-child(2){
-    top: 10%; 
-    left: 34%;
-}
-.interest-holder .interest-holder2:nth-child(3){
-    top: 18%; 
-    left: 32%;
-}
-.interest-holder .interest-holder2:nth-child(4){
-    top: 48%;
-    left: 33%;
-}
-.interest-holder .interest-holder2:nth-child(5){
-    top: 65%;
-    left: 90%;
-}
-.interest-holder .interest-holder2:nth-child(6){
-    top: 23%;
-    left: 38%;
-}
-.interest-holder .interest-holder2:nth-child(7){
-    top: 73%; 
-    left: 45%;
-}
-.interest-holder .interest-holder2:nth-child(8){
-    top: 53%;
-    left: 80%;
-}
-.interest-holder .interest-holder2:nth-child(9){
-    top: 11%;
-    left: 95%;
 }
 
 /*Contact Form*/
@@ -252,19 +217,15 @@ html, body {
     margin-left:0;
     border-radius: 5px;
     color: var(--quaternary-color);
-    background: black;
+    background: transparent;
     font-size: 20px;
     text-transform: uppercase;
     border: 1px solid white;
 }
 .btn:hover{
-    -webkit-background-clip: text;
-    background-clip: text;
-    color:transparent;
-    /* from coloors.co */
-    background-image: linear-gradient(var(--orangepurple-color));
-    background-size: 500%;
-    animation: color-change 3s infinite alternate-reverse;
+    border: 3px solid white;
+    border-color: var(--orangepurple-color);
+    animation: color-change 1s infinite alternate-reverse;
 }
 
 /*animations*/
@@ -293,5 +254,15 @@ html, body {
         background-image: linear-gradient(var(--orangepurple-color));
         background-size: 500%;
         animation: color-change 5s infinite alternate-reverse;
+    }
+    .abs-center {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 1px;
+        max-width: 90%;
+        /*debug-box*/
+        /* border: 1px solid white; */
     }
 }
